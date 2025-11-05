@@ -1,0 +1,33 @@
+footer {
+  background-color: rgb(21, 55, 88);
+  color: silver;
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+.footer-links a {
+  color: silver;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: 0.3s;
+}
+.footer-links a:hover { color: white; }
+
+.socials {
+  margin-top: 12px;
+}
+.socials a {
+  color: silver;
+  margin: 0 8px;
+  font-size: 20px;
+  transition: transform 0.3s, color 0.3s;
+}
+.socials a:hover {
+  color: rgb(255,102,0);
+  transform: scale(1.2);
+}

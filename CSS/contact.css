@@ -1,0 +1,110 @@
+/* Contact Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.contact-hero {
+    background: url("../images/hero2.png") center/cover no-repeat;
+    color: silver;
+    text-align: center;
+    padding: 70px 20px;
+    position: relative;
+}
+
+.contact-hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 0;
+}
+
+.contact-hero h2, 
+.contact-hero p {
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* Layout for Info + Form */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #f4f6f9;
+}
+
+.contact-info,
+.contact-form {
+    background: rgba(80, 66, 7, 0.08);
+    border: 1px solid rgba(80, 66, 7, 0.2);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+    transform: translateY(-6px);
+    box-shadow: 4px 6px 15px rgba(0,0,0,0.2);
+}
+
+.contact-info h3,
+.contact-form h3 {
+    color: rgb(0, 51, 102);
+    margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 8px 0 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(0, 51, 102);
+    box-shadow: 0 0 6px rgba(0,51,102,0.4);
+}
+
+button {
+    background: rgb(0, 51, 102);
+    color: silver;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgb(80, 66, 7);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
